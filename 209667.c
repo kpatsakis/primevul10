@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_push_args() { JSI_NEW_CODES(0,OP_PUSHARG, 0); }

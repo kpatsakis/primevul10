@@ -1,0 +1,1 @@
+void Jsi_MutexUnlock(Jsi_Interp *interp, Jsi_Mutex *mtx) { MutexUnlock(mtx); if (interp) interp->lockRefCnt--; }

@@ -1,0 +1,1 @@
+  SocketsExtension() : Extension("sockets", NO_EXTENSION_VERSION_YET) {}

@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_lessequ() { JSI_NEW_CODES(0,OP_LESSEQU, 0); }

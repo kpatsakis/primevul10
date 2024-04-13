@@ -1,0 +1,38 @@
+char const* numpy_type_name(int numpy_type) {
+  switch (numpy_type) {
+#define TYPE_CASE(s) \
+  case s:            \
+    return #s
+
+    TYPE_CASE(NPY_BOOL);
+    TYPE_CASE(NPY_BYTE);
+    TYPE_CASE(NPY_UBYTE);
+    TYPE_CASE(NPY_SHORT);
+    TYPE_CASE(NPY_USHORT);
+    TYPE_CASE(NPY_INT);
+    TYPE_CASE(NPY_UINT);
+    TYPE_CASE(NPY_LONG);
+    TYPE_CASE(NPY_ULONG);
+    TYPE_CASE(NPY_LONGLONG);
+    TYPE_CASE(NPY_ULONGLONG);
+    TYPE_CASE(NPY_FLOAT);
+    TYPE_CASE(NPY_DOUBLE);
+    TYPE_CASE(NPY_LONGDOUBLE);
+    TYPE_CASE(NPY_CFLOAT);
+    TYPE_CASE(NPY_CDOUBLE);
+    TYPE_CASE(NPY_CLONGDOUBLE);
+    TYPE_CASE(NPY_OBJECT);
+    TYPE_CASE(NPY_STRING);
+    TYPE_CASE(NPY_UNICODE);
+    TYPE_CASE(NPY_VOID);
+    TYPE_CASE(NPY_DATETIME);
+    TYPE_CASE(NPY_TIMEDELTA);
+    TYPE_CASE(NPY_HALF);
+    TYPE_CASE(NPY_NTYPES);
+    TYPE_CASE(NPY_NOTYPE);
+    TYPE_CASE(NPY_CHAR);
+    TYPE_CASE(NPY_USERDEF);
+    default:
+      return "not a numpy type";
+  }
+}

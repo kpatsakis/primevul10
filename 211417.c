@@ -1,0 +1,1 @@
+  const char* data() const { return m_px ? m_px->data() : ""; }

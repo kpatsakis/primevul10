@@ -1,0 +1,1 @@
+void setup_page_debug(struct kmem_cache *s, struct page *page, void *addr) {}

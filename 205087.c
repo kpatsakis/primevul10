@@ -1,0 +1,1 @@
+  Address start() const { return address(sizeof(Segment)); }

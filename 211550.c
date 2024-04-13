@@ -1,0 +1,2 @@
+void pcre_init() {
+}

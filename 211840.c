@@ -1,0 +1,1 @@
+inline void* StringData::payload() { return this + 1; }

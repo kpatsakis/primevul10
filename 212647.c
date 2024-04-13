@@ -1,0 +1,1 @@
+void CopyToString(int64 src, tstring* dst) { *dst = std::to_string(src); }

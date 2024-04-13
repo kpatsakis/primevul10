@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_neg() { JSI_NEW_CODES(0,OP_NEG, 0); }

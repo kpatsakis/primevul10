@@ -1,0 +1,1 @@
+    ~CWebAuth() override {}

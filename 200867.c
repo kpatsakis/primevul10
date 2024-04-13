@@ -1,0 +1,1 @@
+static int tda8425_shift12(int val) { return (val >> 12) | 0xf0; }

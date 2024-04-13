@@ -1,0 +1,1 @@
+  explicit FFTGPU(OpKernelConstruction* ctx) : FFTGPUBase(ctx) {}

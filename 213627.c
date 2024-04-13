@@ -1,0 +1,1 @@
+  ~CufftScratchAllocator() override {}

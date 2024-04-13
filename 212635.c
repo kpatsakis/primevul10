@@ -1,0 +1,1 @@
+void CopyToFingerprint(int64 feature, uint64* dst) { *dst = feature; }

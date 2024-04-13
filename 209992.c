@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_jtrue(int off) { JSI_NEW_CODES(0,OP_JTRUE, off); }

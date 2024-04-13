@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_notequal() { JSI_NEW_CODES(0,OP_NOTEQUAL, 0); }

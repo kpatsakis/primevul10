@@ -1,0 +1,1 @@
+void* Jsi_CurrentThread(void) { return NULL; }

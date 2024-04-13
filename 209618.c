@@ -1,0 +1,1 @@
+Jsi_RC Jsi_MutexLock(Jsi_Interp *interp, Jsi_Mutex *mtx) { if (interp) interp->lockRefCnt++; return MutexLock(interp, mtx);}

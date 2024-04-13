@@ -1,0 +1,1 @@
+	const std::string& GetStrTarget() const { return (chantarget ? chantarget->name : usertarget->nick); }

@@ -1,0 +1,1 @@
+  virtual Ref_Type ref_type() { return AGGREGATE_REF; }

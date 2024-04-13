@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_chthis(jsi_Pstate *p, jsi_Pline *line, int n) { JSI_NEW_CODESLN(0,OP_CHTHIS, n); }

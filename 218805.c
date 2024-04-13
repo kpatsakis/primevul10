@@ -1,0 +1,1 @@
+void __init __weak arch_task_cache_init(void) { }

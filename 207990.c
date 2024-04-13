@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR int    nedmallopt(int parno, int value) THROWSPEC															{ return nedpmallopt((nedpool *) 0, parno, value); }

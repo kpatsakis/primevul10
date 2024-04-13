@@ -1,0 +1,1 @@
+  LocalJwksIntegrationTest() : registration_(factory_) {}

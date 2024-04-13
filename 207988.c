@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR void nedsetvalue(void *v) THROWSPEC																		{ nedpsetvalue((nedpool *) 0, v); }

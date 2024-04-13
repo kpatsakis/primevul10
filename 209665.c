@@ -1,0 +1,1 @@
+static void MutexUnlock(Jsi_Mutex *mtx) { pthread_mutex_unlock(&mtx->mtx); }

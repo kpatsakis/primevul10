@@ -1,0 +1,1 @@
+static bool jsi_FSPathInFilesystemProc(Jsi_Interp *interp, Jsi_Value* path,void **clientDataPtr) {return 1;}

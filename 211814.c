@@ -1,0 +1,1 @@
+  explicit Key(EVP_PKEY *key) : m_key(key) { assertx(m_key);}

@@ -1,0 +1,1 @@
+  explicit operator std::string () const { return toCppString(); }

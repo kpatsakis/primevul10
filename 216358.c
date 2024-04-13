@@ -1,0 +1,1 @@
+  inline const int32_t* DimsDataUpTo5D() const { return dims_; }

@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_mul() { JSI_NEW_CODES(0,OP_MUL, 0); }

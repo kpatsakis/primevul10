@@ -1,0 +1,1 @@
+void Jsi_MutexDelete(Jsi_Interp *interp, Jsi_Mutex *mtx) { MutexDone(mtx); Jsi_Free(mtx);}

@@ -1,0 +1,1 @@
+bool Jsi_NumberIsNormal(Jsi_Number a) { return (fpclassify(a) == FP_ZERO || isnormal(a)); }

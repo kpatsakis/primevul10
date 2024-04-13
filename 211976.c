@@ -1,0 +1,1 @@
+  StringData* detach() { return m_str.detach(); }

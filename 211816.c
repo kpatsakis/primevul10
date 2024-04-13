@@ -1,0 +1,1 @@
+  explicit StrNR(const String &s) : m_px(s.get()) {} // XXX

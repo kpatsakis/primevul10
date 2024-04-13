@@ -1,0 +1,1 @@
+  HotProfilerExtension(): Extension("hotprofiler") {}

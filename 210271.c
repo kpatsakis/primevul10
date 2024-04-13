@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_scatch(jsi_Pstate *p, jsi_Pline *line, const char *var) { JSI_NEW_CODESLN(0,OP_SCATCH, var); }

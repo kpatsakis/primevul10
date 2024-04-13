@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_sub() { JSI_NEW_CODES(0,OP_SUB, 0); }

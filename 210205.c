@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_pop(int n) { JSI_NEW_CODES(0,OP_POP, n); }

@@ -1,0 +1,1 @@
+static int tea6320_shift11(int val) { return val >> 11; }

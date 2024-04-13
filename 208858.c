@@ -1,0 +1,1 @@
+	RootResolver(Compartment* inCompartment) : compartment(inCompartment) {}

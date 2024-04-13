@@ -1,0 +1,1 @@
+static void MutexUnlock(Jsi_Mutex* mtx) { LeaveCriticalSection(&mtx->mtx); }

@@ -1,0 +1,1 @@
+  bool IsAlive() override { return !closed_; }

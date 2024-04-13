@@ -1,0 +1,1 @@
+  Address end() const { return address(size_); }

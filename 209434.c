@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_bor() { JSI_NEW_CODES(0,OP_BOR, 0); }

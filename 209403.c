@@ -1,0 +1,1 @@
+static int jsi_FSEofProc(Jsi_Channel chan) { return feof(_JSI_GETFP(chan,1));}

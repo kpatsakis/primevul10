@@ -1,0 +1,1 @@
+static int jsi_FSTruncateProc(Jsi_Channel chan, unsigned int len) { return ftruncate(fileno(_JSI_GETFP(chan,1)), len);}

@@ -1,0 +1,1 @@
+  McryptExtension() : Extension("mcrypt") {}

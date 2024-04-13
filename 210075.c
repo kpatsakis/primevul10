@@ -1,0 +1,1 @@
+bool Jsi_NumberIsWide(Jsi_Number n) { return (isnormal(n) && (Jsi_Number)((Jsi_Wide)(n)) == (n)); }

@@ -1,0 +1,1 @@
+  std::string toCppString() const { return std::string(c_str(), size()); }

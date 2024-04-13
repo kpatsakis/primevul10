@@ -1,0 +1,3 @@
+  ~OpenSSLInitializer() {
+    EVP_cleanup();
+  }

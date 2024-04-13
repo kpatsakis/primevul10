@@ -1,0 +1,3 @@
+MemFile::~MemFile() {
+  close();
+}

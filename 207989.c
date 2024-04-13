@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR NEDMALLOCPTRATTR void * nedcalloc(size_t no, size_t size) THROWSPEC										{ return nedpcalloc((nedpool *) 0, no, size); }

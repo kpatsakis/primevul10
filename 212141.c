@@ -1,0 +1,2 @@
+  ~MemoProfiler() override {
+  }

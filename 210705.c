@@ -1,0 +1,3 @@
+BlobURLRequestJob::~BlobURLRequestJob() {
+  CloseStream();
+}

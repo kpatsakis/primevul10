@@ -1,0 +1,3 @@
+SoftwareFrameManager::~SoftwareFrameManager() {
+  DiscardCurrentFrame();
+}

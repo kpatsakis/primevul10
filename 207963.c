@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR void   nedfree(void *mem) THROWSPEC																		{ nedpfree((nedpool *) 0, mem); }

@@ -1,0 +1,1 @@
+  const char* data() const { return has_data_ ? *buffer_ : nullptr; }

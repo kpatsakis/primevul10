@@ -1,0 +1,1 @@
+	Membership* GetMember() const { return memb; }

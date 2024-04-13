@@ -1,0 +1,1 @@
+void* Jsi_InterpThread(Jsi_Interp *interp) { return NULL; }

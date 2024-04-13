@@ -1,0 +1,1 @@
+  explicit FreeHelperImpl(void* p) : p(p) {}

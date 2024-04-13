@@ -1,0 +1,3 @@
+ContentSettingsStore::ContentSettingsStore() {
+  DCHECK(OnCorrectThread());
+}

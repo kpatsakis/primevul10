@@ -1,0 +1,1 @@
+  bool use_bigint() const { return use_bigint_; }

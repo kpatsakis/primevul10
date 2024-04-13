@@ -1,0 +1,1 @@
+static int tda9855_treble(int val) { return (val/0x1c71+0x3)<<1; }

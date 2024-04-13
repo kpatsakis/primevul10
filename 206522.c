@@ -1,0 +1,1 @@
+  bool IsClosing() override { return closing_; }

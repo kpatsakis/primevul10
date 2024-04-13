@@ -1,0 +1,1 @@
+  Segment* next() const { return next_; }

@@ -1,0 +1,1 @@
+bool Jsi_NumberIsSubnormal(Jsi_Number a) { return fpclassify(a) == FP_SUBNORMAL; }

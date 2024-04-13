@@ -1,0 +1,1 @@
+  int capacity() const { return size_ - sizeof(Segment); }

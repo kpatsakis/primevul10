@@ -1,0 +1,3 @@
+  ~MCrypt() override {
+    MCrypt::close();
+  }

@@ -1,0 +1,1 @@
+  bool IsReal() const override { return _Real; }

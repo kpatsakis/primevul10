@@ -1,0 +1,2 @@
+  HeaderToFilterStateFilterConfig()
+      : Common::EmptyHttpFilterConfig(HeaderToFilterStateFilterName) {}

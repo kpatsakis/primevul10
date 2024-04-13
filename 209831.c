@@ -1,0 +1,1 @@
+uint Jsi_TreeSize(Jsi_Tree *treePtr) { return treePtr->numEntries; }

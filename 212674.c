@@ -1,0 +1,24 @@
+sc_oberthur_decode_usage(unsigned flags)
+{
+	unsigned ret = 0;
+
+	if (flags & OBERTHUR_ATTR_ENCRYPT)
+		ret |= SC_PKCS15_PRKEY_USAGE_ENCRYPT;
+	if (flags & OBERTHUR_ATTR_DECRYPT)
+		ret |= SC_PKCS15_PRKEY_USAGE_DECRYPT;
+	if (flags & OBERTHUR_ATTR_SIGN)
+		ret |= SC_PKCS15_PRKEY_USAGE_SIGN;
+	if (flags & OBERTHUR_ATTR_RSIGN)
+		ret |= SC_PKCS15_PRKEY_USAGE_SIGNRECOVER;
+	if (flags & OBERTHUR_ATTR_WRAP)
+		ret |= SC_PKCS15_PRKEY_USAGE_WRAP;
+	if (flags & OBERTHUR_ATTR_UNWRAP)
+		ret |= SC_PKCS15_PRKEY_USAGE_UNWRAP;
+	if (flags & OBERTHUR_ATTR_VERIFY)
+		ret |= SC_PKCS15_PRKEY_USAGE_VERIFY;
+	if (flags & OBERTHUR_ATTR_RVERIFY)
+		ret |= SC_PKCS15_PRKEY_USAGE_VERIFYRECOVER;
+	if (flags & OBERTHUR_ATTR_DERIVE)
+		ret |= SC_PKCS15_PRKEY_USAGE_DERIVE;
+	return ret;
+}

@@ -1,0 +1,1 @@
+  GdExtension() : Extension("gd", NO_EXTENSION_VERSION_YET) {}

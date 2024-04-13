@@ -1,0 +1,1 @@
+static int jsi_FSFlushProc(Jsi_Channel chan) { return fflush(_JSI_GETFP(chan,0));}

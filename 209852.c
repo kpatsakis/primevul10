@@ -1,0 +1,1 @@
+static void MutexDone(Jsi_Mutex *mtx) { pthread_mutex_destroy(&mtx->mtx); }

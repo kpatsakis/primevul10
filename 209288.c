@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_object(jsi_Pstate *p, jsi_Pline *line, int c) { JSI_NEW_CODESLN(0,OP_OBJECT, c); }

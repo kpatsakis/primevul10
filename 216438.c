@@ -1,0 +1,1 @@
+  TfLiteStatus status() const { return status_; }

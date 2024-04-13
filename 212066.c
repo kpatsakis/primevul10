@@ -1,0 +1,1 @@
+  double toDouble () const { return m_str ? m_str->toDouble () : 0;}

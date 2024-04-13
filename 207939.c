@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR NEDMALLOCPTRATTR void * nedrealloc2(void *mem, size_t size, size_t alignment, unsigned flags) THROWSPEC	{ return nedprealloc2((nedpool *) 0, mem, size, alignment, flags); }

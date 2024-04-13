@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_delete(int n) { JSI_NEW_CODES(0,OP_DELETE, n); }

@@ -1,0 +1,1 @@
+		CreateRunner(RemoteHandle<Context> context, shared_ptr<NativeModule> module) : context(std::move(context)), module(std::move(module)) {}

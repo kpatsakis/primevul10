@@ -1,0 +1,1 @@
+  SparseTensor() : dims_(0) {}

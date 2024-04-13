@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR int    nedmalloc_trim(size_t pad) THROWSPEC																{ return nedpmalloc_trim((nedpool *) 0, pad); }

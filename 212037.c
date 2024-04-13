@@ -1,0 +1,1 @@
+  void reset(StringData* str = nullptr) { m_str.reset(str); }

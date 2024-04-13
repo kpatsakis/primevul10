@@ -1,0 +1,1 @@
+void CClient::PutStatus(const CString& sLine) { PutModule("status", sLine); }

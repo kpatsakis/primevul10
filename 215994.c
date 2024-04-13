@@ -1,0 +1,1 @@
+    NodeInfo() : NodeInfo(-1) {}

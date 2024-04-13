@@ -1,0 +1,1 @@
+  char operator[](int pos) const { return charAt(pos);}

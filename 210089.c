@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_push_func_sub(jsi_Pstate *p, jsi_Pline *line, Jsi_Func *fun) { p->funcDefs++; JSI_NEW_CODESLN(0,OP_PUSHFUN, fun); }

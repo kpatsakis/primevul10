@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_greater() { JSI_NEW_CODES(0,OP_GREATER, 0); }

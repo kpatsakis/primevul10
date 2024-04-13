@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR size_t nedmemsize(void *RESTRICT mem) THROWSPEC { return nedblksize(0, mem, 0); }

@@ -1,0 +1,1 @@
+  int64 GetMemoryLimitInBytes() override { return memory_limit_; }

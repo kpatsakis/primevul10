@@ -1,0 +1,1 @@
+  bool isNull() const { return !m_str; }

@@ -1,0 +1,1 @@
+static void MutexDone(Jsi_Mutex *mtx) { DeleteCriticalSection(&mtx->mtx); }

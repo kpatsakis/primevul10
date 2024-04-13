@@ -1,0 +1,36 @@
+main_config (void)
+{
+  main_version ();
+
+  XPR(NTR "EXTERNAL_COMPRESSION=%d\n", EXTERNAL_COMPRESSION);
+  XPR(NTR "GENERIC_ENCODE_TABLES=%d\n", GENERIC_ENCODE_TABLES);
+  XPR(NTR "GENERIC_ENCODE_TABLES_COMPUTE=%d\n", GENERIC_ENCODE_TABLES_COMPUTE);
+  XPR(NTR "REGRESSION_TEST=%d\n", REGRESSION_TEST);
+  XPR(NTR "SECONDARY_DJW=%d\n", SECONDARY_DJW);
+  XPR(NTR "SECONDARY_FGK=%d\n", SECONDARY_FGK);
+  XPR(NTR "SECONDARY_LZMA=%d\n", SECONDARY_LZMA);
+  XPR(NTR "UNALIGNED_OK=%d\n", UNALIGNED_OK);
+  XPR(NTR "VCDIFF_TOOLS=%d\n", VCDIFF_TOOLS);
+  XPR(NTR "XD3_ALLOCSIZE=%d\n", XD3_ALLOCSIZE);
+  XPR(NTR "XD3_DEBUG=%d\n", XD3_DEBUG);
+  XPR(NTR "XD3_ENCODER=%d\n", XD3_ENCODER);
+  XPR(NTR "XD3_POSIX=%d\n", XD3_POSIX);
+  XPR(NTR "XD3_STDIO=%d\n", XD3_STDIO);
+  XPR(NTR "XD3_WIN32=%d\n", XD3_WIN32);
+  XPR(NTR "XD3_USE_LARGEFILE64=%d\n", XD3_USE_LARGEFILE64);
+  XPR(NTR "XD3_DEFAULT_LEVEL=%d\n", XD3_DEFAULT_LEVEL);
+  XPR(NTR "XD3_DEFAULT_IOPT_SIZE=%d\n", XD3_DEFAULT_IOPT_SIZE);
+  XPR(NTR "XD3_DEFAULT_SPREVSZ=%d\n", XD3_DEFAULT_SPREVSZ);
+  XPR(NTR "XD3_DEFAULT_SRCWINSZ=%d\n", XD3_DEFAULT_SRCWINSZ);
+  XPR(NTR "XD3_DEFAULT_WINSIZE=%d\n", XD3_DEFAULT_WINSIZE);
+  XPR(NTR "XD3_HARDMAXWINSIZE=%d\n", XD3_HARDMAXWINSIZE);
+  XPR(NTR "sizeof(void*)=%d\n", (int)sizeof(void*));
+  XPR(NTR "sizeof(int)=%d\n", (int)sizeof(int));
+  XPR(NTR "sizeof(size_t)=%d\n", (int)sizeof(size_t));
+  XPR(NTR "sizeof(uint32_t)=%d\n", (int)sizeof(uint32_t));
+  XPR(NTR "sizeof(uint64_t)=%d\n", (int)sizeof(uint64_t));
+  XPR(NTR "sizeof(usize_t)=%d\n", (int)sizeof(usize_t));
+  XPR(NTR "sizeof(xoff_t)=%d\n", (int)sizeof(xoff_t));
+
+  return EXIT_SUCCESS;
+}

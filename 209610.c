@@ -1,0 +1,1 @@
+static void MutexInit(Jsi_Mutex *mtx) {  InitializeCriticalSection(&mtx->mtx); }

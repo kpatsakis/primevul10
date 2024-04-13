@@ -1,0 +1,1 @@
+static inline void memcg_propagate_slab_attrs(struct kmem_cache *s) { }

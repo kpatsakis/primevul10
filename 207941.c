@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR size_t nedmalloc_footprint() THROWSPEC																		{ return nedpmalloc_footprint((nedpool *) 0); }

@@ -1,0 +1,1 @@
+  String(StringData* sd, NoIncRef) : m_str(sd, NoIncRef{}) {}

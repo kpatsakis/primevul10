@@ -1,0 +1,1 @@
+  StringExtension() : Extension("string") {}

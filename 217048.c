@@ -1,0 +1,1 @@
+  int dims() const { return shape_.size(); }

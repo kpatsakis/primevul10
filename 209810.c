@@ -1,0 +1,1 @@
+uint Jsi_HashSize(Jsi_Hash *hashPtr) { return hashPtr->numEntries; }

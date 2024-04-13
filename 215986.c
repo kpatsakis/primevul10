@@ -1,0 +1,1 @@
+  NodeDef consume_node_def(int i) override { return *node_defs_[i]; }

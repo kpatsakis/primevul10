@@ -1,0 +1,1 @@
+static int tea6320_volume(int val) { return (val / (65535/(63-12)) + 12) & 0x3f; }

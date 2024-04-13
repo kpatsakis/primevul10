@@ -1,0 +1,1 @@
+  String rval(double  key) const { return rvalImpl((int64_t)key);}

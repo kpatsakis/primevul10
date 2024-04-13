@@ -1,0 +1,1 @@
+NEDMALLOCNOALIASATTR void   nedfree2(void *mem, unsigned flags) THROWSPEC														{ nedpfree2((nedpool *) 0, mem, flags); }

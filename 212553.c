@@ -1,0 +1,1 @@
+  String copy() { return String(data(), size(), CopyString); }

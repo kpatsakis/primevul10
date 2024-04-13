@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_next() { JSI_NEW_CODES(0,OP_NEXT, 0); }

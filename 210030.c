@@ -1,0 +1,1 @@
+static int jsi_FSTellProc(Jsi_Channel chan) { return ftell(_JSI_GETFP(chan,1));}

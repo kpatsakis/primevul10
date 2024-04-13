@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_local(jsi_Pstate *p, jsi_Pline *line, const char *varname) { JSI_NEW_CODESLN(0,OP_LOCAL, varname); }

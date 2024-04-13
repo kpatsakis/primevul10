@@ -1,0 +1,1 @@
+  int    toInt32  () const { return m_str ? m_str->toInt32  () : 0;}

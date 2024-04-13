@@ -1,0 +1,46 @@
+  static Status Compute(OpKernelContext* context,
+                        const typename TTypes<Tidx, 1>::ConstTensor& arr,
+                        const typename TTypes<T, 1>::ConstTensor& weights,
+                        typename TTypes<T, 1>::Tensor& output,
+                        const Tidx num_bins) {
+    Tensor all_nonneg_t;
+    TF_RETURN_IF_ERROR(context->allocate_temp(
+        DT_BOOL, TensorShape({}), &all_nonneg_t, AllocatorAttributes()));
+    all_nonneg_t.scalar<bool>().device(context->eigen_cpu_device()) =
+        (arr >= Tidx(0)).all();
+    if (!all_nonneg_t.scalar<bool>()()) {
+      return errors::InvalidArgument("Input arr must be non-negative!");
+    }
+
+    // Allocate partial output bin sums for each worker thread. Worker ids in
+    // ParallelForWithWorkerId range from 0 to NumThreads() inclusive.
+    ThreadPool* thread_pool =
+        context->device()->tensorflow_cpu_worker_threads()->workers;
+    const int64 num_threads = thread_pool->NumThreads() + 1;
+    Tensor partial_bins_t;
+    TF_RETURN_IF_ERROR(context->allocate_temp(
+        DataTypeToEnum<T>::value, TensorShape({num_threads, num_bins}),
+        &partial_bins_t));
+    auto partial_bins = partial_bins_t.matrix<T>();
+    partial_bins.setZero();
+    thread_pool->ParallelForWithWorkerId(
+        arr.size(), 8 /* cost */,
+        [&](int64 start_ind, int64 limit_ind, int64 worker_id) {
+          for (int64 i = start_ind; i < limit_ind; i++) {
+            Tidx value = arr(i);
+            if (value < num_bins) {
+              if (weights.size()) {
+                partial_bins(worker_id, value) += weights(i);
+              } else {
+                // Complex numbers don't support "++".
+                partial_bins(worker_id, value) += T(1);
+              }
+            }
+          }
+        });
+
+    // Sum the partial bins along the 0th axis.
+    Eigen::array<int, 1> reduce_dim({0});
+    output.device(context->eigen_cpu_device()) = partial_bins.sum(reduce_dim);
+    return Status::OK();
+  }

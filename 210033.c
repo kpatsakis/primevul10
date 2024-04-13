@@ -1,0 +1,1 @@
+static int jsi_FSRewindProc(Jsi_Channel chan) { rewind(_JSI_GETFP(chan,1)); return 0;}

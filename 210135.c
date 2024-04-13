@@ -1,0 +1,1 @@
+Jsi_vtype Jsi_ValueTypeGet(Jsi_Value *pv) { return pv->vt; }

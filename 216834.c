@@ -1,0 +1,16 @@
+	CoreModUser()
+		: cmdaway(this)
+		, cmdnick(this)
+		, cmdpart(this)
+		, cmdpass(this)
+		, cmdping(this)
+		, cmdpong(this)
+		, cmdquit(this)
+		, cmduser(this)
+		, cmdison(this)
+		, cmduserhost(this)
+		, invisiblemode(this, "invisible", 'i')
+		, operatormode(this)
+		, snomaskmode(this)
+	{
+	}

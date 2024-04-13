@@ -1,0 +1,1 @@
+  size_t node_def_count() const override { return node_defs_.size(); }

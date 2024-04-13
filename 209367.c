@@ -1,0 +1,1 @@
+static Jsi_OpCodes *code_mod() { JSI_NEW_CODES(0,OP_MOD, 0); }

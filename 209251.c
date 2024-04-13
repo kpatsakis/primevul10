@@ -1,0 +1,3 @@
+TarFileReader::~TarFileReader() {
+  delete pri;
+}

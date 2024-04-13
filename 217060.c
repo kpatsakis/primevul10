@@ -1,0 +1,1 @@
+  const Tensor& indices() const { return ix_; }

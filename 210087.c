@@ -1,0 +1,1 @@
+static Jsi_RC KeyLockerTree(Jsi_Tree* tree, int lock) { return KeyLocker((Jsi_Hash*)tree, lock); }

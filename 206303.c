@@ -1,0 +1,1 @@
+  enum encoding encoding() const { return encoding_; }

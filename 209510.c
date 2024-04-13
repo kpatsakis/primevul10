@@ -1,0 +1,1 @@
+static Jsi_RC jsi_EvalLogErr(Jsi_Interp *interp, const char *str) { Jsi_LogMsg(interp, JSI_ERROR, "%s", str); return JSI_ERROR; }
